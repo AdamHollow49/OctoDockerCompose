@@ -2,7 +2,7 @@
 
  cmd="up"
  octopus=0
- project_name="docker compose"
+ project_name="docker-compose"
  while getopts ":n:c:o" opt; do
   case $opt in
     o) octopus=1
