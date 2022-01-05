@@ -18,7 +18,7 @@ done
 
 if [[ $cmd = "up" ]]; then
     #docker-compose pushes non errors onto stderr. Redirect to stdout
-    docker-compose --project-name $project_name  up -d  2>&1
+    docker-compose --project-name --env-file octopus.env $project_name  up -d  2>&1
 else
-    docker-compose --project-name $project_name  $cmd  2>&1
+    docker-compose --project-name --env-file octopus.env $project_name  $cmd  2>&1
 fi
