@@ -7,4 +7,4 @@ services:
     environment:
       - text=${TEXT_MESSAGE}
   redis:
-    image: ${DB_REPO}/${DB_IMAGE}:${DB_TAG}
+    image: ${DB_IMAGE}:${DB_TAG}
